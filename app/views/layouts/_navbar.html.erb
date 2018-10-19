@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <!-- ブランド -->
+    <%= link_to "M COFFEE", root_path, class: "navbar-brand" %>
+    <!-- 切り替えボタン -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation" name="button">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- ナビゲーション -->
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <!-- ナビゲーションメニュー 左側 -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to "Top", root_path, class: "nav-link" %><span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Menu", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Coupon", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Information</a>
+          <div class="dropdown-menu">
+            <%= link_to "Shop", "#", class: "dropdown-item" %>
+            <%= link_to "Access", "#", class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
+
+      <!-- ナビゲーションメニュー 右側 -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Contact", contact_path, class: "nav-link btn btn-info" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
